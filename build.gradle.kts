@@ -51,6 +51,9 @@ if(name == "services" || name == "library"){
 			implementation(project(":cat-api-common"))
 			implementation("org.modelmapper:modelmapper:3.1.0")
 
+			//mysql
+			implementation("mysql:mysql-connector-java")
+
 			//Spring
 			implementation("org.springframework.boot:spring-boot-starter-web")
 			implementation("org.springframework.boot:spring-boot-devtools")
@@ -61,9 +64,6 @@ if(name == "services" || name == "library"){
 			//Lombok
 			compileOnly("org.projectlombok:lombok")
 			annotationProcessor("org.projectlombok:lombok")
-
-			//H2
-			runtimeOnly("com.h2database:h2")
 		}
 
 		tasks.test{
