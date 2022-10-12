@@ -1,0 +1,12 @@
+rootProject.name = 'cat-api'
+
+file("services").listFiles().findAll {it.isDirectory() && it.name != "logs"}.forEach{
+    include(it.name)
+    project(":${it.name}").projectDir = it
+}
+
+file("library").listFiles().findAll {it.isDirectory() && it.name != "logs"}.forEach{
+    include(it.name)
+    project(":${it.name}").projectDir = it
+}
+

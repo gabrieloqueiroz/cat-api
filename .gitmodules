@@ -1,0 +1,6 @@
+[submodule = "library/cat-api-common"]
+    path = library/cat-api-common
+    url = ../cat-api-common
+[submodule = "services/cat-api-all-service"]
+    path = services/cat-api-all-service
+    url = ../cat-api-all-service
