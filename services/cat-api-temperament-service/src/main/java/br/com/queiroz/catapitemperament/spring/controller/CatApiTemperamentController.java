@@ -5,10 +5,7 @@ import br.com.queiroz.catapitemperament.spring.service.interfaces.CatApiTemperam
 import br.com.queiroz.utils.ConstantsUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,8 +20,8 @@ public class CatApiTemperamentController {
         this.breedTemperamentInterfaces = breedTemperamentInterfaces;
     }
 
-    @GetMapping
-    public ResponseEntity<List<BreedDto>> getBreedByTemperament(@RequestParam String temperament){
+    @GetMapping("/{temperament}")
+    public ResponseEntity<List<BreedDto>> getBreedByTemperament(@PathVariable String temperament){
         List<BreedDto> breedDto = breedTemperamentInterfaces.getBreedByTemperament(temperament);
 
         return ResponseEntity.ok(breedDto);
