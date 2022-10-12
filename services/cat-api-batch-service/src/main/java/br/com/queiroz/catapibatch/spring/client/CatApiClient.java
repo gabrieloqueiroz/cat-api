@@ -1,16 +1,12 @@
-package br.com.queiroz.catapiall.spring.client;
-
-import br.com.queiroz.catapiall.spring.client.configuration.CatApiClientConfiguration;
-import br.com.queiroz.catapiall.spring.model.Cat;
-import br.com.queiroz.utils.ConstantsUtils;
+package br.com.queiroz.catapibatch.spring.client;
+import br.com.queiroz.catapibatch.spring.client.configuration.CatApiClientConfiguration;
+import br.com.queiroz.catapibatch.spring.model.Cat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
-
-import static br.com.queiroz.utils.ConstantsUtils.*;
 
 @Service
 public class CatApiClient {

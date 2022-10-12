@@ -1,6 +1,5 @@
-package br.com.queiroz.catapiall.spring.client.configuration;
+package br.com.queiroz.catapibatch.spring.client.configuration;
 
-import br.com.queiroz.utils.ConstantsUtils;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
