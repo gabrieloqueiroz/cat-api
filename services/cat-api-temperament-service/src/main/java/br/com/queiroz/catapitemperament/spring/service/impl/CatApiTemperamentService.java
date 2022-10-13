@@ -24,7 +24,6 @@ public class CatApiTemperamentService implements CatApiTemperamentInterfaces {
         this.mapper = mapper;
     }
 
-
     @Override
     public List<BreedDto> getBreedByTemperament(String temperament) {
         List<Cat> allCats = temperamentRepository.findAll();
