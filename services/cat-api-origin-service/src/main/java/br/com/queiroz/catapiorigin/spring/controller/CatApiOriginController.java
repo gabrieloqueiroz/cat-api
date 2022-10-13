@@ -24,7 +24,7 @@ public class CatApiOriginController {
     }
 
     @GetMapping("/{origin}")
-    public ResponseEntity<List<OriginDto>> getBreedByTemperament(@PathVariable String origin){
+    public ResponseEntity<List<OriginDto>> getCatByOrigin(@PathVariable String origin){
         List<OriginDto> originDto = originInterfaces.getCatByOrigin(origin);
 
         return ResponseEntity.ok(originDto);

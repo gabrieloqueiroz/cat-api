@@ -22,7 +22,7 @@ public class CatApiBreedController {
     }
 
     @GetMapping("/{breed}")
-    public ResponseEntity<BreedDto> getBreedByTemperament(@PathVariable String breed){
+    public ResponseEntity<BreedDto> getBreedById(@PathVariable String breed){
         BreedDto breedDto = breedInterfaces.getBreed(breed);
 
         return ResponseEntity.ok(breedDto);
