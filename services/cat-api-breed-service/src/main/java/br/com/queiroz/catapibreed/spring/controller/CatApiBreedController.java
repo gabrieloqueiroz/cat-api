@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = ConstantsUtils.CAT_API_BREED)
-public class CatApiOriginController {
+public class CatApiBreedController {
 
     CatApiBreedInterfaces breedInterfaces;
 
     @Autowired
-    public CatApiOriginController(CatApiBreedInterfaces breedInterfaces) {
+    public CatApiBreedController(CatApiBreedInterfaces breedInterfaces) {
         this.breedInterfaces = breedInterfaces;
     }
 

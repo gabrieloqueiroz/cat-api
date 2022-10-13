@@ -50,6 +50,8 @@ if(name == "services" || name == "library"){
 		dependencies {
 			implementation(project(":cat-api-common"))
 			implementation("org.modelmapper:modelmapper:3.1.0")
+			testImplementation("com.squareup.okhttp3:mockwebserver")
+			testImplementation("com.squareup.okhttp3:okhttp")
 
 			//mysql
 			implementation("mysql:mysql-connector-java")
