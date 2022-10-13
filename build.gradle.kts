@@ -65,6 +65,9 @@ if(name == "services" || name == "library"){
 			//Lombok
 			compileOnly("org.projectlombok:lombok")
 			annotationProcessor("org.projectlombok:lombok")
+
+			//actuator
+			implementation("org.springframework.boot:spring-boot-starter-actuator:2.7.4")
 		}
 
 		tasks.test{
@@ -76,6 +79,16 @@ if(name == "services" || name == "library"){
 		apply(plugin = "java-library")
 		apply(plugin = "org.springframework.boot")
 		apply(plugin = "io.spring.dependency-management")
+
+		dependencies {
+			implementation("org.springframework.boot:spring-boot-starter-web")
+			implementation("org.springframework.boot:spring-boot-starter-webflux")
+			implementation("org.modelmapper:modelmapper:3.1.0")
+
+			//Lombok
+			compileOnly("org.projectlombok:lombok")
+			annotationProcessor("org.projectlombok:lombok")
+		}
 
 		tasks.test{
 			ignoreFailures= true
