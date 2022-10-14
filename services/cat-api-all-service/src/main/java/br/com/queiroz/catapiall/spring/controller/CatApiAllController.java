@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import static br.com.queiroz.utils.LoggingUtil.logInfo;
+
 @RestController
 @RequestMapping(value = ConstantsUtils.PATH_SEPARATOR + ConstantsUtils.CAT_API_ALL)
 public class CatApiAllController {
@@ -27,7 +29,11 @@ public class CatApiAllController {
     @Cacheable(value = "allBreed")
     public ResponseEntity<List<CatDto>> getAllBreed() {
 
+        logInfo(this.getClass(), "starting search of all breed");
+
         List<CatDto> allBreed = catApiInterfaces.getAllBreed();
+
+        logInfo(this.getClass(), "finishing search of all breed");
 
         return ResponseEntity.ok(allBreed);
     }

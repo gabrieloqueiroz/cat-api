@@ -4,3 +4,16 @@
 [submodule = "services/cat-api-all-service"]
     path = services/cat-api-all-service
     url = ../cat-api-all-service
+[submodule = "services/cat-api-all-service"]
+    path = services/cat-api-breed-service
+    url = ../cat-api-breed-service
+[submodule = "services/cat-api-origin-service"]
+    path = services/cat-api-origin-service
+    url = ../cat-api-origin-service
+[submodule = "services/cat-api-temperament-service"]
+    path = services/cat-api-temperament-service
+    url = ../cat-api-temperament-service
+[submodule = "services/cat-api-batch-service"]
+    path = services/cat-api-batch-service
+    url = ../cat-api-batch-service
+

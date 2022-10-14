@@ -17,7 +17,7 @@ import reactor.netty.http.client.HttpClient;
 @Data
 public class SelfConfiguration {
 
-    @Value("${cat.api.timeout}")
+    @Value("${server.port}")
     private Integer timeout;
 
     @Bean

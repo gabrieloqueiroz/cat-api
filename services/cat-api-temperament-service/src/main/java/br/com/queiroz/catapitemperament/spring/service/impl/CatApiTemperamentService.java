@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static br.com.queiroz.utils.LoggingUtil.logInfo;
+
 @Service
 public class CatApiTemperamentService implements CatApiTemperamentInterfaces {
 
@@ -26,8 +28,9 @@ public class CatApiTemperamentService implements CatApiTemperamentInterfaces {
 
     @Override
     public List<BreedDto> getBreedByTemperament(String temperament) {
+        logInfo(this.getClass(), "Search all cats in repository");
         List<Cat> allCats = temperamentRepository.findAll();
-        System.out.println("Cats encontrados: " + allCats.size());
+        logInfo(this.getClass(), "Found " + allCats.size() + " in repository");
 
          List<BreedDto> catsByTemperament = allCats
                  .stream()
@@ -40,6 +43,7 @@ public class CatApiTemperamentService implements CatApiTemperamentInterfaces {
 
         if (catsByTemperament.isEmpty()) throw new RuntimeException("Temperament not found");
 
+        logInfo(this.getClass(), "Breeds with temperament -- " + temperament + ". Found " + catsByTemperament.size());
         System.out.println("Cats com o temperament " + temperament + ". Total de: " + catsByTemperament.size());
         return catsByTemperament;
     }

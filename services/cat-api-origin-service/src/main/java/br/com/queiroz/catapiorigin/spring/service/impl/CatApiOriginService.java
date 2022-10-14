@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+import static br.com.queiroz.utils.LoggingUtil.logInfo;
+
 @Service
 public class CatApiOriginService implements CatApiOriginInterfaces {
     CatApiOriginRepository originRepository;
@@ -23,8 +25,9 @@ public class CatApiOriginService implements CatApiOriginInterfaces {
 
     @Override
     public List<OriginDto> getCatByOrigin(String origin) {
+        logInfo(this.getClass(), "Find cats by origin in repository");
         List<Cat> catsByOrigin = originRepository.findByOrigin(origin);
-        System.out.println("Encontrados " + catsByOrigin.size());
+        logInfo(this.getClass(), "Founds " + catsByOrigin.size() + " cats.");
 
         List<OriginDto> catsByOriginDto = catsByOrigin
                 .stream()
@@ -34,7 +37,7 @@ public class CatApiOriginService implements CatApiOriginInterfaces {
 
         if (catsByOriginDto.isEmpty()) throw new RuntimeException("Cat by origin not found");
 
-        System.out.println("Da origem " + origin + " Foram encontrados " + catsByOriginDto.size());
+        logInfo(this.getClass(), "Found " + catsByOrigin.size() + " of the origin " + origin);
         return catsByOriginDto;
     }
 }

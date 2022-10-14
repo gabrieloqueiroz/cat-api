@@ -4,11 +4,14 @@ import br.com.queiroz.catapibatch.spring.client.CatApiClient;
 import br.com.queiroz.catapibatch.spring.model.Cat;
 import br.com.queiroz.catapibatch.spring.repository.CatApiRepository;
 import br.com.queiroz.catapibatch.spring.service.interfaces.CatApiInterfaces;
+import br.com.queiroz.utils.LoggingUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
+
+import static br.com.queiroz.utils.LoggingUtil.logInfo;
 
 @Service
 public class CatApiService implements CatApiInterfaces {
@@ -25,17 +28,17 @@ public class CatApiService implements CatApiInterfaces {
     @Override
     public void saveAllBreeds() {
         List<Cat> cats = catApiClient.findAllBreed().collectList().block();
-        System.out.println("Encontrando " + cats.size() + " registros.");
+       logInfo(this.getClass(), "Found " + cats.size() + " registers.");
 
         if (Objects.isNull(cats) || cats.isEmpty()) throw new RuntimeException("check the information");
 
         //logger
-        System.out.println("deletando registros");
+        logInfo(this.getClass(),"Deleting registers");
         catApiRepository.deleteAll();
 
-        System.out.println("inserindo " + cats.size() + " novos registros.");
+        logInfo(this.getClass(),"Inserting " + cats.size() + " new registers.");
         catApiRepository.saveAll(cats);
 
-        System.out.println("finalizado atualização de breeds");
+        logInfo(this.getClass(), "All cats updated successfully");
     }
 }

@@ -4,6 +4,7 @@ import br.com.queiroz.catapiall.spring.dto.CatDto;
 import br.com.queiroz.catapiall.spring.model.Cat;
 import br.com.queiroz.catapiall.spring.repository.CatApiRepository;
 import br.com.queiroz.catapiall.spring.service.interfaces.CatApiInterfaces;
+import br.com.queiroz.utils.LoggingUtil;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +27,10 @@ public class CatApiService implements CatApiInterfaces {
 
     @Override
     public List<CatDto> getAllBreed() {
+        LoggingUtil.logInfo(this.getClass(), "Find all breeds");
         List<Cat> cats = catApiRepository.findAll();
+
+        LoggingUtil.logInfo(this.getClass(), "Found " + cats.size() + " registers");
 
         if (cats.isEmpty()) throw new RuntimeException("check the information");
 

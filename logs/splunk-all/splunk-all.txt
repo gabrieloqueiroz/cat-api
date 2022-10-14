@@ -1,0 +1,686 @@
+{ "timestamp": 13-10-2022 14:45:59.963, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 8368 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:45:59.968, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:00.071, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:00.072, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:01.517, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:01.702, "message": Finished Spring Data repository scanning in 175 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:02.720, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:02.736, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:02.736, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:02.737, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:02.860, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:02.861, "message": Root WebApplicationContext: initialization completed in 2788 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:03.218, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:03.551, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:03.615, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:03.692, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:03.981, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:04.156, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:04.858, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:04.870, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:05.355, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 14:46:05.889, "message": LiveReload server is running on port 35729, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:05.896, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:05.937, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:05.959, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:05.974, "message": Started CatApiAllApplication in 6.626 seconds (JVM running for 7.772), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:12.235, "message": Initializing Spring DispatcherServlet 'dispatcherServlet', "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:12.235, "message": Initializing Servlet 'dispatcherServlet', "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:12.238, "message": Completed initialization in 2 ms, "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:46:12.322, "message": starting search of all breed, "logger_name": b.c.q.c.s.c.CatApiAllController, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:46.222, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:46.226, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:46.234, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:57.399, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 6564 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:57.404, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:57.644, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:57.645, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:47:59.839, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:00.158, "message": Finished Spring Data repository scanning in 301 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:01.766, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:01.785, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:01.786, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:01.787, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:01.978, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:01.979, "message": Root WebApplicationContext: initialization completed in 4333 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:02.520, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:03.010, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:03.084, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:03.191, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:03.543, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:03.792, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:05.359, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:05.378, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:06.153, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 14:48:07.041, "message": Unable to start LiveReload server, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 14:48:07.051, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:07.102, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:07.137, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:48:07.162, "message": Started CatApiAllApplication in 10.683 seconds (JVM running for 13.169), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:49:01.236, "message": Initializing Spring DispatcherServlet 'dispatcherServlet', "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:49:01.236, "message": Initializing Servlet 'dispatcherServlet', "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:49:01.238, "message": Completed initialization in 1 ms, "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:49:01.286, "message": starting search of all breed, "logger_name": b.c.q.c.s.c.CatApiAllController, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 14:51:51.272, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 14:51:51.277, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 14:51:51.288, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:00.090, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 13556 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:00.095, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:00.195, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:00.195, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:01.718, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:01.912, "message": Finished Spring Data repository scanning in 183 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:02.794, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:02.813, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:02.813, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:02.813, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:02.959, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:02.959, "message": Root WebApplicationContext: initialization completed in 2763 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:03.326, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:03.792, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:03.869, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:03.983, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:04.278, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:04.491, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:05.272, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:05.284, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:05.770, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 14:52:06.297, "message": Unable to start LiveReload server, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 14:52:06.302, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:06.339, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:06.363, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:06.379, "message": Started CatApiAllApplication in 6.864 seconds (JVM running for 8.077), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:34.293, "message": Initializing Spring DispatcherServlet 'dispatcherServlet', "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8091-exec-1], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:34.293, "message": Initializing Servlet 'dispatcherServlet', "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-1], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:34.295, "message": Completed initialization in 1 ms, "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-1], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:34.345, "message": starting search of all breed, "logger_name": b.c.q.c.s.c.CatApiAllController, "thread_name": [http-nio-8091-exec-1], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:34.346, "message": Find all breeds, "logger_name": b.c.q.c.s.s.impl.CatApiService, "thread_name": [http-nio-8091-exec-1], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:34.633, "message": Found 67 registers, "logger_name": b.c.q.c.s.s.impl.CatApiService, "thread_name": [http-nio-8091-exec-1], "level": INFO  }
+{ "timestamp": 13-10-2022 14:52:34.667, "message": finishing search of all breed, "logger_name": b.c.q.c.s.c.CatApiAllController, "thread_name": [http-nio-8091-exec-1], "level": INFO  }
+{ "timestamp": 13-10-2022 15:05:39.980, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 15:05:39.997, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 15:05:40.082, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 15:05:46.409, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@30:49 - no applicable action for [SplunkHttp], current ElementPath  is [[configuration][SplunkHttp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@31:39 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][SplunkHttp][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@37:41 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@30:49 - no applicable action for [SplunkHttp], current ElementPath  is [[configuration][SplunkHttp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@31:39 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][SplunkHttp][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@37:41 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 15:17:18.502, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:16 - no applicable action for [Appenders], current ElementPath  is [[configuration][Appenders]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@21:49 - no applicable action for [Console], current ElementPath  is [[configuration][Appenders][Console]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@23:144 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][Console][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@35:49 - no applicable action for [SplunkHttp], current ElementPath  is [[configuration][Appenders][SplunkHttp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@36:39 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][SplunkHttp][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:38 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:16 - no applicable action for [Appenders], current ElementPath  is [[configuration][Appenders]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@21:49 - no applicable action for [Console], current ElementPath  is [[configuration][Appenders][Console]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@23:144 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][Console][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@35:49 - no applicable action for [SplunkHttp], current ElementPath  is [[configuration][Appenders][SplunkHttp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@36:39 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][SplunkHttp][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:38 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 15:18:15.176, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:16 - no applicable action for [Appenders], current ElementPath  is [[configuration][Appenders]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@21:49 - no applicable action for [Console], current ElementPath  is [[configuration][Appenders][Console]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@23:144 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][Console][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@35:49 - no applicable action for [SplunkHttp], current ElementPath  is [[configuration][Appenders][SplunkHttp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@36:39 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][SplunkHttp][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:41 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@44:38 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:16 - no applicable action for [Appenders], current ElementPath  is [[configuration][Appenders]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@21:49 - no applicable action for [Console], current ElementPath  is [[configuration][Appenders][Console]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@23:144 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][Console][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@35:49 - no applicable action for [SplunkHttp], current ElementPath  is [[configuration][Appenders][SplunkHttp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@36:39 - no applicable action for [PatternLayout], current ElementPath  is [[configuration][Appenders][SplunkHttp][PatternLayout]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:41 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@44:38 - no applicable action for [AppenderRef], current ElementPath  is [[configuration][root][AppenderRef]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 15:45:38.882, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 15:51:50.102, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 15:52:35.270, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 15:56:00.364, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:96 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [splunkonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 16:05:00.987, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 2916 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:00.994, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:01.163, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:01.163, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:03.821, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:04.257, "message": Finished Spring Data repository scanning in 411 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:05.777, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:05.799, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:05.799, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:05.800, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:06.036, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:06.036, "message": Root WebApplicationContext: initialization completed in 4872 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:06.571, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:07.256, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:07.353, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:07.540, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:08.010, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:08.345, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:09.849, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:09.876, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:11.044, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 16:05:12.229, "message": LiveReload server is running on port 35729, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:12.239, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:12.318, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:12.413, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:05:12.517, "message": Started CatApiAllApplication in 12.551 seconds (JVM running for 14.385), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:17:31.536, "message": Initializing Spring DispatcherServlet 'dispatcherServlet', "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 16:17:31.537, "message": Initializing Servlet 'dispatcherServlet', "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 16:17:31.540, "message": Completed initialization in 3 ms, "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 16:17:31.615, "message": starting search of all breed, "logger_name": b.c.q.c.s.c.CatApiAllController, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 16:17:31.615, "message": Find all breeds, "logger_name": b.c.q.c.s.s.impl.CatApiService, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 16:17:32.118, "message": Found 67 registers, "logger_name": b.c.q.c.s.s.impl.CatApiService, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 16:17:32.191, "message": finishing search of all breed, "logger_name": b.c.q.c.s.c.CatApiAllController, "thread_name": [http-nio-8091-exec-2], "level": INFO  }
+{ "timestamp": 13-10-2022 16:19:56.346, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 16:19:56.351, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 16:19:56.365, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:00.832, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 14528 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:00.838, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:01.022, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:01.023, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:04.781, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:05.211, "message": Finished Spring Data repository scanning in 403 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:07.146, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:07.175, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:07.176, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:07.176, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:07.435, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:07.435, "message": Root WebApplicationContext: initialization completed in 6411 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:08.170, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:09.260, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:09.416, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:09.647, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:10.240, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:10.637, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:12.519, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:12.550, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:13.591, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 16:20:14.560, "message": LiveReload server is running on port 35729, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:14.570, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:14.631, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:14.669, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:20:14.699, "message": Started CatApiAllApplication in 14.761 seconds (JVM running for 16.008), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 16:56:32.046, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 16:56:32.061, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 16:56:32.078, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 16:56:37.761, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:94 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [spluonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:94 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [spluonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 16:59:54.554, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:94 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [spluonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:94 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [spluonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 17:01:49.430, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:94 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [spluonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.catapiall.spring.CatApiAllApplication.main(CatApiAllApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [com.splunk.logging.HttpEventCollectorLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:94 - ActionException in Action for tag [Appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type com.splunk.logging.HttpEventCollectorLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [spluonline]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 23 common frames omitted
+{ "timestamp": 13-10-2022 17:14:34.621, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 8556 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:34.628, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:34.794, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:34.795, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:37.531, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:37.901, "message": Finished Spring Data repository scanning in 342 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:39.391, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:39.405, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:39.405, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:39.405, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:39.550, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:39.551, "message": Root WebApplicationContext: initialization completed in 4755 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:40.618, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:41.481, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:41.640, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:41.843, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:42.231, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:42.593, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:43.750, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:43.770, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:44.595, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 17:14:45.663, "message": LiveReload server is running on port 35729, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:45.672, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:45.765, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:45.816, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:14:45.844, "message": Started CatApiAllApplication in 12.074 seconds (JVM running for 13.973), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:17.989, "message": Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications), "logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.084, "message": Pausing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [Thread-5], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.085, "message": Stopping service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-5], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.112, "message": Stopping ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [Thread-5], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.119, "message": Destroying ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [Thread-5], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.206, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-5], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.222, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-5], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.275, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-5], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.617, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 8556 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:18.618, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.566, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.586, "message": Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.804, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.805, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.805, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.805, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.845, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:19.846, "message": Root WebApplicationContext: initialization completed in 1220 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:20.003, "message": HikariPool-2 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:20.040, "message": HikariPool-2 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:20.048, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:20.064, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:20.115, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:20.116, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:20.553, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 17:23:21.231, "message": LiveReload server is running on port 35729, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:21.239, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:21.289, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:21.298, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:21.322, "message": Started CatApiAllApplication in 2.844 seconds (JVM running for 529.451), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:21.329, "message": Condition evaluation unchanged, "logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.745, "message": Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications), "logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.756, "message": Pausing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [Thread-7], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.756, "message": Stopping service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-7], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.760, "message": Stopping ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [Thread-7], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.761, "message": Destroying ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [Thread-7], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.764, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-7], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.766, "message": HikariPool-2 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-7], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.775, "message": HikariPool-2 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-7], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.937, "message": Starting CatApiAllApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 8556 (C:\estudos\cat-api\services\cat-api-all-service\out\production\classes started by gabri in C:\estudos\cat-api), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:24.938, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.462, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.475, "message": Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.587, "message": Tomcat initialized with port(s): 8091 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.587, "message": Initializing ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.587, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.587, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.622, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.622, "message": Root WebApplicationContext: initialization completed in 679 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.789, "message": HikariPool-3 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.820, "message": HikariPool-3 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.827, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.844, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.993, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:25.994, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:26.341, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 13-10-2022 17:23:26.756, "message": LiveReload server is running on port 35729, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:26.766, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:26.817, "message": Starting ProtocolHandler ["http-nio-8091"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:26.827, "message": Tomcat started on port(s): 8091 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:26.858, "message": Started CatApiAllApplication in 1.987 seconds (JVM running for 534.987), "logger_name": b.c.q.c.spring.CatApiAllApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 17:23:26.873, "message": Condition evaluation unchanged, "logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 13-10-2022 19:07:15.759, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 19:07:15.795, "message": HikariPool-3 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 13-10-2022 19:07:15.804, "message": HikariPool-3 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }

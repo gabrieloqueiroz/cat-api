@@ -1,11 +1,16 @@
 package br.com.queiroz.catapibatch.spring.controller;
 
 import br.com.queiroz.catapibatch.spring.service.interfaces.CatApiInterfaces;
+import br.com.queiroz.utils.ConstantsUtils;
+import br.com.queiroz.utils.LoggingUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class CatApiBatchController implements Runnable{
+@RequestMapping(value = ConstantsUtils.PATH_SEPARATOR + ConstantsUtils.CAT_API_BATCH)
+public class CatApiBatchController implements Runnable {
 
     private CatApiInterfaces catApiInterfaces;
 
@@ -16,12 +21,15 @@ public class CatApiBatchController implements Runnable{
         t.start();
     }
 
-
+    @GetMapping
+    public void refreshCatsTable() {
+        catApiInterfaces.saveAllBreeds();
+    }
 
     @Override
     public void run() {
         //Logger
-        System.out.println("iniciando processamento");
+        LoggingUtil.logInfo(this.getClass(), "Starting update cats table");
         catApiInterfaces.saveAllBreeds();
     }
 }

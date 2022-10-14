@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static br.com.queiroz.utils.LoggingUtil.logInfo;
+
 @RestController
 @RequestMapping(value = ConstantsUtils.CAT_API_TEMPERAMENT)
 public class CatApiTemperamentController {
@@ -22,8 +24,10 @@ public class CatApiTemperamentController {
 
     @GetMapping("/{temperament}")
     public ResponseEntity<List<BreedDto>> getBreedByTemperament(@PathVariable String temperament){
+        logInfo(this.getClass(), "Starting search breeds by temperament");
         List<BreedDto> breedDto = breedTemperamentInterfaces.getBreedByTemperament(temperament);
 
+        logInfo(this.getClass(), "Finishing search breeds by temperament");
         return ResponseEntity.ok(breedDto);
     }
 }

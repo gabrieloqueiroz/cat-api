@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <property name="LOG_DIR_SPLUNK" value="logs/splunk-all"/>
+    <!--    Log console-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>{ "timestamp": %d{dd-MM-yyyy HH:mm:ss.SSS}, "message": %msg, "logger_name": %logger{35}, "thread_name": [%thread], "level": %-5level }%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="splunk" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR_SPLUNK:-env/}/splunk-all.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>{ "timestamp": %d{dd-MM-yyyy HH:mm:ss.SSS}, "message": %msg, "logger_name": %logger{35}, "thread_name": [%thread], "level": %-5level }%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="splunk"/>
+    </root>
+</configuration>
