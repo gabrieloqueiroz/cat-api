@@ -108,6 +108,28 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Cat-Api-Batch",
+			"item": [
+				{
+					"name": "Refresh Table Cats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{cat-api-temperament}}/Affectionate",
+							"host": [
+								"{{cat-api-temperament}}"
+							],
+							"path": [
+								"Affectionate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
