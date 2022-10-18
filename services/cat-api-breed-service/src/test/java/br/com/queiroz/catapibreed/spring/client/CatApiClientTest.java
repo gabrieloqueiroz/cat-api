@@ -72,6 +72,6 @@ public class CatApiClientTest {
         Assertions.assertEquals(expected.getDescription(), response.getDescription());
         Assertions.assertEquals(expected.getName(), response.getName());
         Assertions.assertEquals(expected.getOrigin(), response.getOrigin());
-        Assertions.assertEquals(expected.getLife_spam(), response.getLife_spam());
+        Assertions.assertEquals(expected.getLife_span(), response.getLife_span());
     }
 }

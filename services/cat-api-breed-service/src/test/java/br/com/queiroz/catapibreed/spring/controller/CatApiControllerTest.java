@@ -32,7 +32,7 @@ public class CatApiControllerTest{
         when(catApiBreedInterfaces.getBreed(any())).thenReturn(expected);
 
         //when
-        ResponseEntity<BreedDto> response = catApiBreedController.getBreedByTemperament(insert);
+        ResponseEntity<BreedDto> response = catApiBreedController.getBreedById(insert);
 
         //then
         Assertions.assertNotNull(response);
