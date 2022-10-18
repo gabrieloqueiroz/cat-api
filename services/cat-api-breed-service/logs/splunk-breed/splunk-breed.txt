@@ -1,0 +1,583 @@
+{ "timestamp": 14-10-2022 16:01:51.453, "message": Starting CatApiBreedApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 5488 (C:\estudos\cat-api\services\cat-api-breed-service\out\production\classes started by gabri in C:\estudos\cat-api\services\cat-api-breed-service), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:01:51.459, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:01:51.588, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:01:51.595, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:01:52.880, "message": Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [br.com.queiroz.CatApiBreedApplication]; nested exception is java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$DifferentManagementContextConfiguration, "logger_name": o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:01:52.907, "message": 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled., "logger_name": o.s.b.a.l.ConditionEvaluationReportLoggingListener, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:01:52.971, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [br.com.queiroz.CatApiBreedApplication]; nested exception is java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$DifferentManagementContextConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:609)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:110)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:812)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:192)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.CatApiBreedApplication.main(CatApiBreedApplication.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$DifferentManagementContextConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:225)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:371)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:271)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'cat.api.breed.port' in value "${cat.api.breed.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230)
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79)
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:65)
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:605)
+	at org.springframework.boot.actuate.autoconfigure.web.server.ManagementPortType.getPortProperty(ManagementPortType.java:64)
+	at org.springframework.boot.actuate.autoconfigure.web.server.ManagementPortType.get(ManagementPortType.java:58)
+	at org.springframework.boot.actuate.autoconfigure.web.server.OnManagementPortCondition.getMatchOutcome(OnManagementPortCondition.java:49)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 30 common frames omitted
+{ "timestamp": 14-10-2022 16:09:16.636, "message": Starting CatApiBreedApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 2328 (C:\estudos\cat-api\services\cat-api-breed-service\out\production\classes started by gabri in C:\estudos\cat-api\services\cat-api-breed-service), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:16.642, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:16.764, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:16.764, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:19.339, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:19.387, "message": Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:20.721, "message": Tomcat initialized with port(s): 8080 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:20.745, "message": Initializing ProtocolHandler ["http-nio-8080"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:20.746, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:20.746, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:20.908, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:20.909, "message": Root WebApplicationContext: initialization completed in 4144 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:21.380, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:21.870, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:21.953, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:22.082, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:22.551, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:22.868, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:24.039, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:24.069, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:24.561, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:09:25.793, "message": Unable to start LiveReload server, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:09:25.805, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.860, "message": Starting ProtocolHandler ["http-nio-8080"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.871, "message": Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use, "logger_name": o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:09:25.895, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.905, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.919, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.923, "message": Pausing ProtocolHandler ["http-nio-8080"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.923, "message": Stopping service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.930, "message": Stopping ProtocolHandler ["http-nio-8080"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.931, "message": Destroying ProtocolHandler ["http-nio-8080"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:25.956, "message": 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled., "logger_name": o.s.b.a.l.ConditionEvaluationReportLoggingListener, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:09:26.006, "message": 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+, "logger_name": o.s.b.d.LoggingFailureAnalysisReporter, "thread_name": [restartedMain], "level": ERROR }
+{ "timestamp": 14-10-2022 16:20:25.153, "message": Starting CatApiBreedApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 8088 (C:\estudos\cat-api\services\cat-api-breed-service\out\production\classes started by gabri in C:\estudos\cat-api\services\cat-api-breed-service), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:25.182, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:25.426, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:25.427, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:28.715, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:28.765, "message": Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:31.944, "message": Tomcat initialized with port(s): 8090 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:31.973, "message": Initializing ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:31.974, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:31.975, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:33.595, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:33.596, "message": Root WebApplicationContext: initialization completed in 8164 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:37.219, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:38.009, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:38.136, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:38.440, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:39.163, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:39.704, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:42.451, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:42.481, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:44.006, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:20:45.878, "message": Unable to start LiveReload server, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:20:45.944, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:46.067, "message": Starting ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:46.238, "message": Tomcat started on port(s): 8090 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:20:46.293, "message": Started CatApiBreedApplication in 21.886 seconds (JVM running for 24.056), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:25:31.046, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 14-10-2022 16:25:31.055, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 14-10-2022 16:25:31.094, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:02.332, "message": Starting CatApiBreedApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 16764 (C:\estudos\cat-api\services\cat-api-breed-service\out\production\classes started by gabri in C:\estudos\cat-api\services\cat-api-breed-service), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:02.346, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:02.456, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:02.456, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:05.048, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:05.090, "message": Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:06.977, "message": Tomcat initialized with port(s): 8090 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:06.999, "message": Initializing ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:07.000, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:07.000, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:07.249, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:07.249, "message": Root WebApplicationContext: initialization completed in 4792 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:07.780, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:08.959, "message": HikariPool-1 - Exception during pool initialization., "logger_name": com.zaxxer.hikari.pool.HikariPool, "thread_name": [restartedMain], "level": ERROR }
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:143)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:103)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:95)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.CatApiBreedApplication.main(CatApiBreedApplication.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 53 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 56 common frames omitted
+{ "timestamp": 14-10-2022 16:27:09.034, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:09.232, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:09.863, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:10.218, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:11.230, "message": HikariPool-1 - Exception during pool initialization., "logger_name": com.zaxxer.hikari.pool.HikariPool, "thread_name": [restartedMain], "level": ERROR }
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.CatApiBreedApplication.main(CatApiBreedApplication.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 54 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 57 common frames omitted
+{ "timestamp": 14-10-2022 16:27:11.233, "message": HHH000342: Could not obtain connection to query metadata, "logger_name": o.h.e.j.e.i.JdbcEnvironmentInitiator, "thread_name": [restartedMain], "level": WARN  }
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.CatApiBreedApplication.main(CatApiBreedApplication.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 54 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 57 common frames omitted
+{ "timestamp": 14-10-2022 16:27:11.241, "message": Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment], "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": ERROR }
+{ "timestamp": 14-10-2022 16:27:11.243, "message": Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment], "logger_name": o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:27:11.255, "message": Stopping service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:11.308, "message": 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled., "logger_name": o.s.b.a.l.ConditionEvaluationReportLoggingListener, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:27:11.405, "message": Application run failed, "logger_name": o.s.boot.SpringApplication, "thread_name": [restartedMain], "level": ERROR }
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at br.com.queiroz.CatApiBreedApplication.main(CatApiBreedApplication.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 38 common frames omitted
+{ "timestamp": 14-10-2022 16:28:02.577, "message": Starting CatApiBreedApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 10844 (C:\estudos\cat-api\services\cat-api-breed-service\out\production\classes started by gabri in C:\estudos\cat-api\services\cat-api-breed-service), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:02.584, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:02.745, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:02.745, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:05.610, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:05.653, "message": Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:07.159, "message": Tomcat initialized with port(s): 8090 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:07.188, "message": Initializing ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:07.189, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:07.190, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:07.378, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:07.379, "message": Root WebApplicationContext: initialization completed in 4633 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:07.839, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:08.378, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:08.481, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:08.606, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:09.124, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:09.489, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:11.185, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:11.212, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:12.073, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:28:13.210, "message": Unable to start LiveReload server, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 16:28:13.219, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:13.264, "message": Starting ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:13.309, "message": Tomcat started on port(s): 8090 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:28:13.350, "message": Started CatApiBreedApplication in 12.278 seconds (JVM running for 13.952), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 16:29:19.756, "message": Initializing Spring DispatcherServlet 'dispatcherServlet', "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 14-10-2022 16:29:19.756, "message": Initializing Servlet 'dispatcherServlet', "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 14-10-2022 16:29:19.759, "message": Completed initialization in 2 ms, "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 14-10-2022 16:29:20.067, "message": Starting search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 14-10-2022 16:29:20.067, "message": Find breed by Id: abys, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 14-10-2022 16:29:22.133, "message": Found breed!, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 14-10-2022 16:29:22.197, "message": Finishing search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 14-10-2022 16:31:08.797, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 14-10-2022 16:31:08.809, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 14-10-2022 16:31:08.829, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:25.949, "message": Starting CatApiBreedApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 5348 (C:\estudos\cat-api\services\cat-api-breed-service\out\production\classes started by gabri in C:\estudos\cat-api\services\cat-api-breed-service), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:25.969, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:26.094, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:26.095, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:29.659, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:29.724, "message": Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:32.595, "message": Tomcat initialized with port(s): 8090 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:32.632, "message": Initializing ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:32.634, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:32.636, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:33.640, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:33.641, "message": Root WebApplicationContext: initialization completed in 7545 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:37.901, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:38.760, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:38.912, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:39.153, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:39.826, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:40.563, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:43.358, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:43.408, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:44.892, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 17:23:46.151, "message": Unable to start LiveReload server, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 14-10-2022 17:23:46.162, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:46.220, "message": Starting ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:46.274, "message": Tomcat started on port(s): 8090 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:23:46.343, "message": Started CatApiBreedApplication in 21.459 seconds (JVM running for 23.701), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 14-10-2022 17:25:47.124, "message": Initializing Spring DispatcherServlet 'dispatcherServlet', "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8090-exec-1], "level": INFO  }
+{ "timestamp": 14-10-2022 17:25:47.130, "message": Initializing Servlet 'dispatcherServlet', "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8090-exec-1], "level": INFO  }
+{ "timestamp": 14-10-2022 17:25:47.132, "message": Completed initialization in 2 ms, "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8090-exec-1], "level": INFO  }
+{ "timestamp": 14-10-2022 17:25:47.596, "message": Starting search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-1], "level": INFO  }
+{ "timestamp": 14-10-2022 17:25:47.596, "message": Find breed by Id: abys, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-1], "level": INFO  }
+{ "timestamp": 14-10-2022 17:25:52.129, "message": Found breed!, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-1], "level": INFO  }
+{ "timestamp": 14-10-2022 17:25:52.224, "message": Finishing search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-1], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:17.128, "message": Starting CatApiBreedApplication using Java 17.0.4.1 on DESKTOP-QI8K0QU with PID 21776 (C:\estudos\cat-api\services\cat-api-breed-service\out\production\classes started by gabri in C:\estudos\cat-api\services\cat-api-breed-service), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:17.136, "message": No active profile set, falling back to 1 default profile: "default", "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:17.251, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable, "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:17.252, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG', "logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:19.212, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:19.245, "message": Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces., "logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:20.453, "message": Tomcat initialized with port(s): 8090 (http), "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:20.469, "message": Initializing ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:20.470, "message": Starting service [Tomcat], "logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:20.470, "message": Starting Servlet engine: [Apache Tomcat/9.0.65], "logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:20.631, "message": Initializing Spring embedded WebApplicationContext, "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:20.632, "message": Root WebApplicationContext: initialization completed in 3380 ms, "logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:21.055, "message": HikariPool-1 - Starting..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:21.566, "message": HikariPool-1 - Start completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:21.683, "message": HHH000204: Processing PersistenceUnitInfo [name: default], "logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:21.996, "message": HHH000412: Hibernate ORM core version 5.6.11.Final, "logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:22.555, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final}, "logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:22.858, "message": HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect, "logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:24.276, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform], "logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:24.301, "message": Initialized JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:25.009, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning, "logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 18-10-2022 16:23:26.018, "message": Unable to start LiveReload server, "logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level": WARN  }
+{ "timestamp": 18-10-2022 16:23:26.028, "message": Exposing 13 endpoint(s) beneath base path '/actuator', "logger_name": o.s.b.a.e.web.EndpointLinksResolver, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:26.078, "message": Starting ProtocolHandler ["http-nio-8090"], "logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:26.129, "message": Tomcat started on port(s): 8090 (http) with context path '', "logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:23:26.170, "message": Started CatApiBreedApplication in 9.888 seconds (JVM running for 13.042), "logger_name": b.c.queiroz.CatApiBreedApplication, "thread_name": [restartedMain], "level": INFO  }
+{ "timestamp": 18-10-2022 16:24:47.397, "message": Initializing Spring DispatcherServlet 'dispatcherServlet', "logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 18-10-2022 16:24:47.398, "message": Initializing Servlet 'dispatcherServlet', "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 18-10-2022 16:24:47.402, "message": Completed initialization in 4 ms, "logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 18-10-2022 16:24:47.698, "message": Starting search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 18-10-2022 16:24:47.700, "message": Find breed by Id: abys, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 18-10-2022 16:24:49.800, "message": Found breed!, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 18-10-2022 16:24:49.896, "message": Finishing search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-2], "level": INFO  }
+{ "timestamp": 18-10-2022 16:25:11.776, "message": Starting search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-3], "level": INFO  }
+{ "timestamp": 18-10-2022 16:25:11.777, "message": Find breed by Id: abob, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-3], "level": INFO  }
+{ "timestamp": 18-10-2022 16:25:11.952, "message": Found breed!, "logger_name": b.c.q.c.s.s.s.CatApiBreedService, "thread_name": [http-nio-8090-exec-3], "level": INFO  }
+{ "timestamp": 18-10-2022 16:25:11.953, "message": Finishing search breed by id, "logger_name": b.c.q.c.s.c.CatApiBreedController, "thread_name": [http-nio-8090-exec-3], "level": INFO  }
+{ "timestamp": 18-10-2022 16:27:02.596, "message": Closing JPA EntityManagerFactory for persistence unit 'default', "logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 18-10-2022 16:27:02.612, "message": HikariPool-1 - Shutdown initiated..., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
+{ "timestamp": 18-10-2022 16:27:02.636, "message": HikariPool-1 - Shutdown completed., "logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level": INFO  }
